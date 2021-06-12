@@ -5,5 +5,4 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   microsoft-edge-dev = pkgs.callPackage ./pkgs/microsoft-edge-dev { };
-  jetbrains-toolbox = pkgs.callPackage ./pkgs/jetbrains-toolbox { };
 }

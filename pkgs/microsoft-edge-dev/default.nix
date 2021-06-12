@@ -30,9 +30,6 @@
   # Necessary for USB audio devices.
 , pulseSupport ? true, libpulseaudio ? null
 
-  # Only needed for getting information about upstream binaries
-, chromium
-
 , gsettings-desktop-schemas, gnome
 
 # For video acceleration via VA-API (--enable-features=VaapiVideoDecoder)
@@ -184,7 +181,7 @@ in stdenv.mkDerivation rec {
 
   meta = {
     homepage = "https://www.microsoftedgeinsider.com/en-us/";
-    description = "Microsoft's fork of Chromium web browser";
+    description = "Microsoft's fork of the Chromium web browser";
     license = licenses.unfree;
     platforms = [ "x86_64-linux" ];
     mainProgram = "microsoft-edge-dev";
